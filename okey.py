@@ -1,0 +1,1 @@
+print("shaker khati")
