@@ -25,7 +25,7 @@ def main():
             start, end = int(input("Start: ")), int(input("End: "))
             print("Sum of primes:", sum_of_primes(start, end))
         elif choice == '2':
-            value, unit = float(input("Value: ")), input("Unit (M/F): ")
+            value, unit = float(input("Value: ")), input("Unit (M/F/CM/MM/KM): ")
             print("Converted length:", length_converter(value, unit))
         elif choice == '3':
             print("Number of consonants:", count_consonants(input("String: ")))
