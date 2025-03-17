@@ -21,12 +21,7 @@ num_words = count_words(content)
 print(f"Number of words: {num_words}")
 
 
-from collections import Counter
 
-def most_common_word(content):
-    words = content.lower().split()
-    word_counts = Counter(words)
-    return word_counts.most_common(1)[0]
 
 import re
 from collections import Counter
@@ -65,7 +60,12 @@ print("Number of unique words:", count_unique_words(words))
 print("Longest word:", find_longest_word(words))
 print(f"Occurrences of '{target_word}':", count_word_occurrences(words, target_word))
 print("Percentage of words longer than the average length:", percentage_longer_than_average(words))
+from collections import Counter
 
+def most_common_word(content):
+    words = content.lower().split()
+    word_counts = Counter(words)
+    return word_counts.most_common(1)[0]
 
 # Test the function
 common_word, count = most_common_word(content)
