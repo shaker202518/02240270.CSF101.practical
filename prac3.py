@@ -1,4 +1,4 @@
-asdfad
+
 my_name_array = ["pema", False, 12, 1.22, True]
 firstArrayLength = len(my_name_array)  # Get initial length
 
@@ -18,7 +18,7 @@ for index in range(arrayLength):
     print(nameOfAnimals)
 
 
-while Loop 
+# while Loop
 name_Of_Animals = ["dogs", "cats", "monkeys", "elephnats" ]
 arrayLength = len(name_Of_Animals)
 
