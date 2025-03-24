@@ -1,3 +1,4 @@
+asdfad
 my_name_array = ["pema", False, 12, 1.22, True]
 firstArrayLength = len(my_name_array)  # Get initial length
 
