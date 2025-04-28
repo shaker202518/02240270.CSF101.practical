@@ -1,6 +1,6 @@
-i = 1
-while i < 6:
-  print(i)
-  if i == 3:
-    break
-  i += 1
+def myfunc(a):
+    a = a + 2
+    a = a * 2
+    return a
+
+print(myfunc(2))
