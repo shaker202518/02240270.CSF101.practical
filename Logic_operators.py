@@ -13,4 +13,10 @@
 # b = "   Hello, World!"
 # print(b.encode())
 
-print(10 > 8)
+class Myclass:
+    def __init__ (self, values):
+        self.values = values
+    def __getitem__(self, index):
+        return self.values[index]
+obj = Myclass([1, 2, 3])
+print(obj[1])
