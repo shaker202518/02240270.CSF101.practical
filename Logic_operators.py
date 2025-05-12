@@ -13,10 +13,19 @@
 # b = "   Hello, World!"
 # print(b.encode())
 
-class Myclass:
-    def __init__ (self, values):
-        self.values = values
-    def __getitem__(self, index):
-        return self.values[index]
-obj = Myclass([1, 2, 3])
-print(obj[1])
+# class Myclass:
+#     def __init__ (self, values):
+#         self.values = values
+#     def __getitem__(self, index):
+#         return self.values[index]
+# obj = Myclass([1, 2, 3])
+# print(obj[1])
+
+import random 
+def randonnumber(key:int):
+    for i in range(0, random.randint(1, 10)):
+        print(random.randint(1, 100)) 
+def award():
+    print("You have won a prize")
+def noaward():
+    print("You have not won a prize")             
