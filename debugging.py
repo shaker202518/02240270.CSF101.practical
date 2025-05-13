@@ -1,36 +1,36 @@
-# # Simple Exception Handling Example
-# n = 10
+# Simple Exception Handling Example
+n = 10
 
-# def enter_number():
-#     while True:
-#         try:
-#             return int(input("Enter an integer: "))
-#         except ValueError:
-#             print("Invalid input. Please enter a valid integer.")
+def enter_number():
+    while True:
+        try:
+            return int(input("Enter an integer: "))
+        except ValueError:
+            print("Invalid input. Please enter a valid integer.")
 
-# x = enter_number()
-# try:
-#     res = n / x 
-#     print(res)
-# except ZeroDivisionError:
-#     print("Can't be divided by zero!")
+x = enter_number()
+try:
+    res = n / x 
+    print(res)
+except ZeroDivisionError:
+    print("Can't be divided by zero!")
     
-# def dividefunction(x, y):
-#     try:
-#         z = x/y
-#     except TypeError:
-#         print("Type Error: Cannot divide number by string")
-#     except ZeroDivisionError:
-#         print("Zero Division Error: Cannot divide by zero")
-#     except:
-#         print("Unknown Error")
-#     else:
-#         print(z)
-#     finally:
-#         print("End of the program")
+def dividefunction(x, y):
+    try:
+        z = x/y
+    except TypeError:
+        print("Type Error: Cannot divide number by string")
+    except ZeroDivisionError:
+        print("Zero Division Error: Cannot divide by zero")
+    except:
+        print("Unknown Error")
+    else:
+        print(z)
+    finally:
+        print("End of the program")
 
-# dividefunction(10, 0)
-# dividefunction(10, "hello")
+dividefunction(10, 0)
+dividefunction(10, "hello")
 
 class InvalidAgeError(Exception):	# Step 1: Subclass the Exception class
     '''Raises InvalidAgeError when age is invalid '''
